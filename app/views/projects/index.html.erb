@@ -1,0 +1,9 @@
+<ul>
+	<% @projects.each do |project| %>
+	<li>
+		<a href="<%= project_url(project) %>"><%= project.name %></a>
+	</li>
+	<% end %>
+</ul>
+
+<a href="<%= new_project_url %>">New Project</a>
